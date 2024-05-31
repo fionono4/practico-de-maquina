@@ -1,0 +1,11 @@
+turno busca_turno (lista l, char id[4]){
+    reset(&l);
+    while(!isOos(l)){
+        if(strcmp(id,get_idturno(copia(l)))==0){
+            return copia(l);
+        }
+        else{
+            forwards(&l);
+        }
+    }
+}
